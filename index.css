@@ -1,58 +1,81 @@
 /* Set the width and height of the navigation bar */
 header {
-    width: 100%;
-    height: 50px;
+  background-color: lightgray;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 
 /* Set the width and height of the main content area */
 main {
-    width: 80%;
-    height: calc(100vh - 50px); /* Subtract the height of the navbar */
-    display: flex; /* Allows child elements to be laid out in a row */
+  display: flex; /* Allows child elements to be laid out in a row */
+  margin: 20px;
 }
 
 /* Set the width and height of the video player section */
-main section:first-child {
-    width: 70%;
-    height: 100%;
+#video-player {
+  background-color: lightblue;
+  height: 500px;
+  width: 70%;
+  float: left;
+  padding: 20px;
 }
 
-/* Set the width and height of the video information section */
-main section:last-child {
-    width: 30%;
-    height: 100%;
-}
 
 /* Set the width and height of the suggested videos sidebar */
 aside {
-    width: 20%;
-    height: calc(100vh - 50px); /* Subtract the height of the navbar */
+  background-color: rgb(228, 224, 255);
+  height: 500px;
+  width: 20%;
+  float: right;
 }
 
-#navbar {
-    background-color: #f5f5f5;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
-  }
-  
-  #video-player {
-    background-color: #fff;
-    margin-top: 50px;
-  }
-  
-  #sidebar {
-    background-color: #f5f5f5;
-    float: right;
-    width: 200px;
-    margin-top: 50px;
-  }
-  
-  #video-info {
-    background-color: #fff;
-    margin-top: 50px;
-    margin-right: 200px;
-  }
-  
+body {
+  margin: 0;
+  padding: 0;
+}
+
+aside {
+  width: 20%;
+  height: calc(100vh - 70px); /* Subtract the height of the navbar */
+  background-color: #7b0f0f;
+  float: right;
+  padding: 20px;
+}
+
+aside h2 {
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+aside ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+aside li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+aside img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+aside span {
+  font-size: 12px;
+  color: #ddd;
+  margin-right: 10px;
+}
+
+aside p {
+  margin: 0;
+  font-size: 14px;
+}
